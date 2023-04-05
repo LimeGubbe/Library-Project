@@ -96,7 +96,7 @@ namespace AdminHandlesBooks
                 
                 string bookStr = booksFromDb[i];
                 string[] bookLineTokens = bookStr.Split(" ");
-                string bookId = bookLineTokens[0];
+                string bookId = bookLineTokens[0]; 
                 string bookName = bookLineTokens[1];   //bok namn
                 string bookAuthor = bookLineTokens[2];  //bok författare
                 string bookGenre = bookLineTokens[3];  //bok genre
@@ -114,6 +114,8 @@ namespace AdminHandlesBooks
                 Book book = new Book(bookId, bookName, bookAuthor, bookGenre, bookrowNumber, available);
                 books.Add(book);
             }
+
+            
         }
 
         public bool ReturnBook(Book book)

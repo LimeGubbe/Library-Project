@@ -210,10 +210,10 @@
         static void Booksystem()
             {
               
-                Console.WriteLine("Välkomen! Välj ett av alternativen nedan:\n");
+                Console.WriteLine("Välkomen! Välj 1 för att gå vidare:\n");
                 Console.WriteLine ("1. Lista alla böcker");
-                Console.WriteLine("2. Lägg till en bok");
-                Console.Write("Ditt val (1-2): ");
+               //Console.WriteLine("2. Lägg till en bok");
+               //Console.Write("Ditt val (1-2): ");
                 var choice = Console.ReadLine();
 
                 if (choice == "1")
@@ -221,6 +221,8 @@
                     //AddBookPage();
                     ListAllBooks();
                 }
+                
+            
             }
 
             static void ListAllBooks()
@@ -259,6 +261,7 @@
 
                 Console.WriteLine("Vad vill du göra?\n");
                 Console.WriteLine("1. Gå tillbaka");
+
 
                 if (book.Available)
                 {
